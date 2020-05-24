@@ -1,6 +1,9 @@
 import math
 
 
+# Note that the function only works for integers that satisfy 2^k, where k is any natural number.
+# See README for more info on this.
+
 def func(parts):
     orig_k = math.log2(parts)
 
@@ -15,5 +18,3 @@ def func(parts):
             rec(i + 1, b)
 
     rec(1, 1)
-
-
